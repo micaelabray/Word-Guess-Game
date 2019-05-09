@@ -1,0 +1,33 @@
+Create an HTML5 page
+Add in Bootstrap CDN
+
+Heading:
+Create div with one row and one column and give it a heading for the page, “Hangman: Jonas Brother Edition”
+In CSS manipulate heading to fit your stying.
+
+Body:
+Create a div with one row and two columns, each 6 sections wide. 
+
+Left col:
+Add a picture of the Jonas Brothers
+
+Right column: 
+Create a div with 8 rows, each col the width of the body col
+
+Row 1 of Right column: “Press any key to get started” text
+
+Row 2 of Right column: “Wins” text, plus a counter to the right to track wins
+
+Row 3 of Right column: “Current word” text
+
+Row 4 of Right column: Word from the array that starts with “_” instead of each letter and on a correct guess fills in the letter
+
+Row 5 of Right column: “Number of guesses remaining” text
+
+Row 6 of Right column: Give 10 guesses to start. On an incorrect letter, guesses will go down by 1. 
+
+Row 7 of Right column: “Letters already guessed” text
+
+Row 8 of Right column: Once an incorrect letter has been guessed, it appears below row 7 to show it has already been used. Make sure that pressing a letter more than once will not cause guesses to diminish. 
+
+Once the word has been solved, restart to pick a new word and recover the letters.
