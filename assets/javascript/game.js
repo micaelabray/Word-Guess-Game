@@ -12,8 +12,8 @@ var currentGuess = songTitlesArray[Math.floor(Math.random()*songTitlesArray.leng
 function startUp(){ 
     // Starts the game
     document.getElementById("directionsText").innerHTML = "Guess the Jonas Brothers song title!";
-    document.getElementById("currentGuess").innerHTML = blankSpaces.join(" ");
     // Picks a random songTitleArray from array
+    document.getElementById("currentGuess").innerHTML = blankSpaces.join("_");
     blankSpaces = ["_"];
 
     // Gives each letter a value of '_'
@@ -24,7 +24,7 @@ function startUp(){
     // Changes spaces to a blank space instead of an underscore
     for (var j=0;j<currentGuess.length;j++){
         if (currentGuess[j] ==" "){
-           blankSpaces[j] = " ";
+           blankSpaces[j] =" ";
         }
     }
 
