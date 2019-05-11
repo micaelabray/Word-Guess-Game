@@ -51,7 +51,7 @@ function startUp(){
     // Takes away guessed letters
     guessedLetters = [];
 
-    if()
+    // if()
 
 
 }
