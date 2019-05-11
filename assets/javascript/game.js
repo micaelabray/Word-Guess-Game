@@ -11,20 +11,36 @@ var currentGuess = songTitlesArray[Math.floor(Math.random()*songTitlesArray.leng
 
 function startUp(){ 
     // Starts the game
+
     document.getElementById("directionsText").innerHTML = "Guess the Jonas Brothers song title!";
-    // Picks a random songTitleArray from array
-    document.getElementById("currentGuess").innerHTML = blankSpaces.join("_");
-    blankSpaces = ["_"];
+    
+    // Picks a random songTitleArray from array with each letter a value of '_'
+    for (var i = 0; i < currentGuess.length; i++) {
+        console.log(currentGuess[i]);
+        if(currentGuess[i] === " "){
+            blankSpaces[i] = " ";
+        }
+        else {
+            blankSpaces[i] = "_";
+        }
+    }
 
     // Gives each letter a value of '_'
-    for(var i = 0; i<currentGuess.length; i++){
-        blankSpaces[i]="_";
-     }
+    console.log(blankSpaces);
+    document.getElementById("currentGuess").innerHTML = blankSpaces.join("");
+                    // blankSpaces = [" "];
+
+                    // for(var i = 0; i<currentGuess.length; i++){
+                    //     blankSpaces[i]="_";
+                    //  }
+
+                    //      document.getElementById("currentGuess").innerHTML = blankSpaces.join("_");
+
   
     // Changes spaces to a blank space instead of an underscore
     for (var j=0;j<currentGuess.length;j++){
         if (currentGuess[j] ==" "){
-           blankSpaces[j] =" ";
+           blankSpaces[j] ==" ";
         }
     }
 
@@ -34,6 +50,8 @@ function startUp(){
     guessesLeft = guessesTotal;
     // Takes away guessed letters
     guessedLetters = [];
+
+    if()
 
 
 }
