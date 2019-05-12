@@ -51,9 +51,6 @@ function startUp(){
     // Takes away guessed letters
     guessedLetters = [];
 
-    // if()
-
-
 }
 
 document.onkeyup = function(event) {
