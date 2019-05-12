@@ -31,3 +31,16 @@ Row 7 of Right column: “Letters already guessed” text
 Row 8 of Right column: Once an incorrect letter has been guessed, it appears below row 7 to show it has already been used. Make sure that pressing a letter more than once will not cause guesses to diminish. 
 
 Once the word has been solved, restart to pick a new word and recover the letters.
+
+
+
+JavaScript:
+Create an array with the words that you are wanting to add into the game
+
+Randomize the array using Math.random 
+
+For each letter, give it the value of an underscore until the letter is selected on the keyboard
+
+Once the letter is selected, give the value of that letter back to the word
+
+If you select an incorrect letter, guesses total will go down and the letter will appear in the "Letters already guessed" text field.
