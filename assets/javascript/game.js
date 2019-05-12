@@ -51,19 +51,32 @@ function startUp(){
     // Takes away guessed letters
     guessedLetters = [];
 
+    //trying to get the letters guessed to show back up
+    if(document.onkeyup === currentGuess[i]){
+        blankSpaces != "_";
+    }
+
+    function checkInput(input) { 
+        // if you guess a letter and it isn't in the word, attempting to reduce the guesses left by 1 and add the letter to the guessed letters section
+        if (guessedLetters.indexOf(input) === -1){ 
+            guessedLetters.push(input);
+            if (currentGuess.indexOf(input) === -1){
+                guessesLeft--;
+            }
+        }
+        
+        //attempting to get the letter you are guessing to appear in the DOM
+        else {
+            for (var i = 0; i < currentGuess.length; i++){
+                if (input === currentGuess[i]) { 
+                blankSpaces[i] = input;
+                }
+            }
+        }
+    }
+
 }
 
 document.onkeyup = function(event) {
     startUp();
-}  
-
-
-
-
-// Array
-
-// Button
-// function play(){
-//     var audio = document.getElementById("audio");
-//     audio.play();
-// }
+}
