@@ -21,7 +21,7 @@ function startUp(){
             blankSpaces[i] = " ";
         }
         else {
-            blankSpaces[i] = "_";
+            blankSpaces[i] = "-";
         }
     }
 
